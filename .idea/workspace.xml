@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82b6dd1f-67fa-4272-a939-8809165307da" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Proyecto-SOMNI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Proyecto-SOMNI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/web/js/bootstrap.min.js.map" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/CF_Veterans/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CF_Veterans/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/CF_Veterans/app/Resources/index.html.twig" />
+        <option value="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/composer" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/orm" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="935" />
+    <option name="width" value="945" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
+              <item name="CF_Veterans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
+              <item name="CF_Veterans" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
+              <item name="CF_Veterans" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marko\Documents\Proyecto-SOMNI\CF_Veterans\app\Resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82b6dd1f-67fa-4272-a939-8809165307da" name="Default Changelist" comment="" />
+      <created>1549365731137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549365731137</updated>
+      <workItem from="1549365738522" duration="2879000" />
+      <workItem from="1549438947692" duration="598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3477000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/media.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/stats.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/roster.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/news.twig" />
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/lineup.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/news.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
