@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Equipos
+ * Teams
  *
- * @ORM\Table(name="equipos")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\EquiposRepository")
+ * @ORM\Table(name="teams")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\TeamsRepository")
  */
-class Equipos
+class Teams
 {
     /**
      * @var int
@@ -24,9 +24,9 @@ class Equipos
     /**
      * @var string
      *
-     * @ORM\Column(name="nombre", type="string", length=255)
+     * @ORM\Column(name="name", type="string", length=255)
      */
-    private $nombre;
+    private $name;
 
 
     /**
@@ -40,27 +40,27 @@ class Equipos
     }
 
     /**
-     * Set nombre
+     * Set name
      *
-     * @param string $nombre
+     * @param string $name
      *
-     * @return Equipos
+     * @return Teams
      */
-    public function setNombre($nombre)
+    public function setName($name)
     {
-        $this->nombre = $nombre;
+        $this->name = $name;
 
         return $this;
     }
 
     /**
-     * Get nombre
+     * Get name
      *
      * @return string
      */
-    public function getNombre()
+    public function getName()
     {
-        return $this->nombre;
+        return $this->name;
     }
 }
 

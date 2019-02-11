@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Goles
+ * Goals
  *
- * @ORM\Table(name="goles")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\GolesRepository")
+ * @ORM\Table(name="goals")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\GoalsRepository")
  */
-class Goles
+class Goals
 {
     /**
      * @var int
@@ -24,16 +24,16 @@ class Goles
     /**
      * @var int
      *
-     * @ORM\Column(name="goles", type="integer")
+     * @ORM\Column(name="goals", type="integer")
      */
-    private $goles;
+    private $goals;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="vuelta", type="integer")
+     * @ORM\Column(name="lap", type="integer")
      */
-    private $vuelta;
+    private $lap;
 
 
     /**
@@ -47,51 +47,51 @@ class Goles
     }
 
     /**
-     * Set goles
+     * Set goals
      *
-     * @param integer $goles
+     * @param integer $goals
      *
-     * @return Goles
+     * @return Goals
      */
-    public function setGoles($goles)
+    public function setGoals($goals)
     {
-        $this->goles = $goles;
+        $this->goals = $goals;
 
         return $this;
     }
 
     /**
-     * Get goles
+     * Get goals
      *
      * @return int
      */
-    public function getGoles()
+    public function getGoals()
     {
-        return $this->goles;
+        return $this->goals;
     }
 
     /**
-     * Set vuelta
+     * Set lap
      *
-     * @param integer $vuelta
+     * @param integer $lap
      *
-     * @return Goles
+     * @return Goals
      */
-    public function setVuelta($vuelta)
+    public function setLap($lap)
     {
-        $this->vuelta = $vuelta;
+        $this->lap = $lap;
 
         return $this;
     }
 
     /**
-     * Get vuelta
+     * Get lap
      *
      * @return int
      */
-    public function getVuelta()
+    public function getLap()
     {
-        return $this->vuelta;
+        return $this->lap;
     }
 }
 

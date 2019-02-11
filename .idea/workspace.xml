@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="82b6dd1f-67fa-4272-a939-8809165307da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/RootController.php" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/RouteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Asistencias.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Equipos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Goles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Jugadores.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/MinutosJugados.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Tarjetas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Repository/AsistenciasRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Repository/EquiposRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Repository/GolesRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Repository/JugadoresRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Repository/MinutosJugadosRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Repository/TarjetasRepository.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +26,17 @@
     <pharConfigPath>$PROJECT_DIR$/CF_Veterans/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Players.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +51,8 @@
         <option value="$PROJECT_DIR$/CF_Veterans/prueba.css" />
         <option value="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/RouteController.php" />
+        <option value="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Goles.php" />
+        <option value="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Players.php" />
       </list>
     </option>
   </component>
@@ -75,7 +98,7 @@
       <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/orm" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1260" />
@@ -144,38 +167,9 @@
               <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
               <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
               <item name="CF_Veterans" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
-              <item name="CF_Veterans" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
-              <item name="CF_Veterans" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
-              <item name="CF_Veterans" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-grid.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="Proyecto-SOMNI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Proyecto-SOMNI" type="462c0819:PsiDirectoryNode" />
-              <item name="CF_Veterans" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-reboot.css" type="620a8d5e:NestingTreeNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AppBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,16 +213,19 @@
       <workItem from="1549438947692" duration="1196000" />
       <workItem from="1549526688513" duration="6619000" />
       <workItem from="1549613807805" duration="1501000" />
+      <workItem from="1549871200949" duration="673000" />
+      <workItem from="1549875758029" duration="1723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12195000" />
+    <option name="totallyTimeSpent" value="14591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -292,6 +289,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/RouteController.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Goles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Players.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
