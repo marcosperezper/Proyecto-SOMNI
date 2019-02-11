@@ -3,80 +3,97 @@
 <head>
     <meta charset="UTF-8"/>
     <title>{% block title %}Welcome!{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
+          id="bootstrap-css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-          <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'
-                integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'
+          integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/'
+          crossorigin='anonymous'>
+
+    {% block stylesheets %}
+
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+
+    {% block scripts_extra %}
+
+    {% endblock %}
+
 </head>
 <body>
-  <div class="container-fluid">
-  <div class="row">
-    <div class="col-2 menu">
-      <ul class="nav flex-column bg-dark" id="menu">
-        <li class="nav-item">
-          <img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo-cfveterans_montserrat"></img>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success active" href="#">INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success" href="#">ESTADISTICAS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success" href="#">PLANTILLA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success" href="#">CONVOCATORIA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success" href="#">CRONICA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success" href="#">AUDIOVISUAL</a>
-        </li>
-      </ul>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 menu">
+            <ul class="nav flex-column bg-dark" id="menu">
+                <li class="nav-item">
+                    <img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo-cfveterans_montserrat"></img>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success active" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">ESTADISTICAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">PLANTILLA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">CONVOCATORIA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">CRONICA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#">AUDIOVISUAL</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </div>
 <div class="wrap" id="wrap">
 
 
-{% block body %}
+    {% block body %}
 
-{% endblock %}
+    {% endblock %}
 </div>
 <!-- Footer -->
-<footer class="page-footer font-small bg-dark pt-4" >
+<footer class="page-footer font-small bg-dark pt-4">
 
     <!-- Footer Elements -->
     <div class="container">
 
-      <!--Grid row-->
-      <div class="row">
+        <!--Grid row-->
+        <div class="row">
 
-        <!--Grid column-->
-        <div class="col-md-6 mb-4 col-sm-6">
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 col-sm-6">
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6 mb-4 col-sm-6">
+                <i class="fab fa-facebook" style="font-size:24px ;color:#28a745"></i>
+                <i class="fab fa-twitter" style="font-size:24px ;color: #28a745"></i>
+                <i class="material-icons" style="font-size:24px;color:#28a745">email</i>
+            </div>
+            <!--Grid column-->
+
 
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-md-6 mb-4 col-sm-6">
-          <i class="fab fa-facebook" style="font-size:24px ;color:#28a745"></i>
-          <i class="fab fa-twitter" style="font-size:24px ;color: #28a745"></i>
-          <i class="material-icons" style="font-size:24px;color:#28a745">email</i>
-        </div>
-        <!--Grid column-->
-
-
-      </div>
-      <!--Grid row-->
+        <!--Grid row-->
 
     </div>
     <!-- Footer Elements -->
@@ -87,8 +104,8 @@
     </div>
     <!-- Copyright -->
 
-  </footer>
-  <!-- Footer -->
+</footer>
+<!-- Footer -->
 
 {% block javascripts %}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -102,39 +119,47 @@
 </html>
 
 <style>
-.menu {
-  padding-left: 0;
-}
-html{
-  height: 100%;
-}
-body {
-  padding: 0;
-  height: 100%;
-}
+    .menu {
+        padding-left: 0;
+    }
 
-#menu {
-  height: 150%;
-  position: fixed;
-}
-footer{
-  position: relative;
-  margin-top: 15px;
-  clear: both;
-  padding-top: 20px;
-}
-i{
-  margin-right: 50px;
-}
-#wrap{
-  min-height: 100%;
-}
-#logo{
-  height: 150px;
-  width: 150px;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-}
+    html {
+        height: 100%;
+    }
+
+    body {
+        padding: 0;
+        height: 100%;
+    }
+
+    #menu {
+        height: 150%;
+        position: fixed;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 15px;
+        clear: both;
+        padding-top: 20px;
+    }
+
+    i {
+        margin-right: 50px;
+    }
+
+    #wrap {
+        min-height: 100%;
+    }
+
+    #logo {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+
     {% block css_extra %}
 
     {% endblock %}
