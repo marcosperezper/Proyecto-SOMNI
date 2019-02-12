@@ -32,9 +32,9 @@
 
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid col-md-2 col-sm-2">
     <div class="row">
-        <div class="col-2 menu">
+        <div class="menu">
             <ul class="nav flex-column bg-dark" id="menu">
                 <li class="nav-item">
                     <img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo-cfveterans_montserrat"></img>
@@ -61,7 +61,8 @@
         </div>
     </div>
 </div>
-<div class="wrap" id="wrap">
+
+<div class="wrap col-md-10 col-sm-10" id="wrap">
 
 
     {% block body %}

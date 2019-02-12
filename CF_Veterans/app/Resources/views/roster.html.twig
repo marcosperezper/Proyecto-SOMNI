@@ -1,3 +1,132 @@
 {% extends  "base.html.twig" %}
+
+{% block stylesheets %}
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+{% endblock %}
+
+{% block scripts_extra %}
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+{% endblock %}
+
 {% block body %}
+    <div class="col-md-3 col-sm-3"></div>
+    <div class="col-md-6 col-sm-6">
+        <div class="carousel-wrapper">
+            <div class="carousel" data-flickity>
+                <div class="carousel-cell">
+                    <img style="margin: auto"
+                         src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+                    <button class="btn-primary">Ver estadísticas</button>
+                </div>
+                <div class="carousel-cell">
+                    <img style="margin: auto"
+                         src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+                    <button class="btn-primary">Ver estadísticas</button>
+                </div>
+                <div class="carousel-cell">
+                    <img style="margin: auto"
+                         src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+                    <button class="btn-primary">Ver estadísticas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block css_extra %}
+
+    {#Edita el tamaño de las imagenes dentro del carousel #}
+    img{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    }
+
+    {#Edita el fondo y contorno del carousel #}
+    .carousel-wrapper {
+    text-align: center;
+    margin: 25% 0 0 0;
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 39px -19px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    min-height: 450px;
+    }
+
+    {#Edita los elementos del carousel y añade el tipo de transición #}
+    .carousel-wrapper .carousel .carousel-cell {
+    padding: 10px;
+    background-color: #FFFFFF;
+    width: 80%;
+    height: auto;
+    min-width: 240px;
+    margin: 0 20px;
+    transition: transform 500ms ease;
+    }
+
+    .carousel-wrapper .carousel .carousel-cell .more {
+    display: block;
+    opacity: 0;
+    margin: 5px 0 15px 0;
+    text-align: center;
+    font-size: 10px;
+    color: #CFCFCF;
+    text-decoration: none;
+    transition: opacity 300ms ease;
+    }
+
+    .carousel-wrapper .carousel .carousel-cell .more:hover, .carousel-wrapper .carousel .carousel-cell .more:active, .carousel-wrapper .carousel .carousel-cell .more:visited, .carousel-wrapper .carousel .carousel-cell .more:focus {
+    color: #CFCFCF;
+    text-decoration: none;
+    }
+
+    .carousel-wrapper .carousel .carousel-cell .line {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background-color: black;
+    left: 50%;
+    margin: 5px 0 0 -1px;
+    transition: height 300ms ease;
+    display: block;
+    }
+
+    .carousel-wrapper .carousel .carousel-cell .price {
+    position: absolute;
+    font-weight: 700;
+    margin: 45px auto 0 auto;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity 300ms ease 300ms;
+    }
+
+    .carousel-wrapper .carousel .carousel-cell .price sup {
+    top: 2px;
+    position: absolute;
+    }
+
+    .carousel-wrapper .carousel .carousel-cell.is-selected {
+    transform: scale(1.2);
+    }
+
+    .carousel-wrapper .carousel .carousel-cell.is-selected .line {
+    height: 35px;
+    }
+
+    .carousel-wrapper .carousel .carousel-cell.is-selected .price, .carousel-wrapper .carousel .carousel-cell.is-selected .more {
+    opacity: 1;
+    }
+    .carousel-wrapper .flickity-page-dots {
+    display: none;
+    }
+
+    .carousel-wrapper .flickity-viewport, .carousel-wrapper .flickity-slider {
+    overflow: visible;
+    }
+
+
 {% endblock %}
