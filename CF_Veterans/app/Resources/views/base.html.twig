@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}CF_Veterans{% endblock %}</title>
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"
@@ -37,25 +37,25 @@
         <div class="menu">
             <ul class="nav flex-column bg-dark" id="menu">
                 <li class="nav-item">
-                    <img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo-cfveterans_montserrat"></img>
+                    <img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo-cfveterans_montserrat">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success active" href="#">INICIO</a>
+                    <a class="nav-link text-success active" href="{{ path('index') }}">INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="#">ESTADISTICAS</a>
+                    <a class="nav-link text-success" href="{{ path('stats') }}">ESTADISTICAS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="#">PLANTILLA</a>
+                    <a class="nav-link text-success" href="{{ path('roster') }}">PLANTILLA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="#">CONVOCATORIA</a>
+                    <a class="nav-link text-success" href="{{ path('lineup') }}">CONVOCATORIA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="#">CRONICA</a>
+                    <a class="nav-link text-success" href="{{ path('news') }}">CRONICA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="#">AUDIOVISUAL</a>
+                    <a class="nav-link text-success" href="{{ path('media') }}">AUDIOVISUAL</a>
                 </li>
             </ul>
         </div>
