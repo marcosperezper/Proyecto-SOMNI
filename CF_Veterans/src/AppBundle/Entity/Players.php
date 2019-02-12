@@ -13,12 +13,18 @@ use Doctrine\ORM\Mapping as ORM;
 class Players
 {
     /**
+     * @ORM\OnetoOne(targetEntity="Players")
+     * @ORM\JoinColumn(name="player_id", referencedColumnName="id")
+     */
+
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
+
     private $id;
 
     /**
