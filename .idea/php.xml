@@ -40,6 +40,7 @@
       <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/CF_Veterans/vendor/psr/link" />
       <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/polyfill-ctype" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />
