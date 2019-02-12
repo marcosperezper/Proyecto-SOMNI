@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
  * Minutes
@@ -12,6 +14,16 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Minutes
 {
+    /**
+     * @ORM\OnetoOne(targetEntity="Players")
+     * @ORM\JoinColumn(name="player_id", referencedColumnName="id")
+     */
+    private $player_id;
+    public function __construct()
+    {
+        $this->player_id = new ArrayCollection();
+    }
+
     /**
      * @var int
      *
