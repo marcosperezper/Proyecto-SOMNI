@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82b6dd1f-67fa-4272-a939-8809165307da" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+            <state relative-caret-position="504">
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
               <folding>
                 <element signature="e#816#836#0#HTML" expanded="true" />
                 <element signature="e#1136#1156#0#HTML" expanded="true" />
@@ -68,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="63" selection-start-line="4" selection-start-column="65" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="840">
+              <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -95,6 +94,7 @@
         <option value="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Players.php" />
         <option value="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig" />
       </list>
     </option>
   </component>
@@ -258,10 +258,18 @@
       <workItem from="1549871200949" duration="673000" />
       <workItem from="1549875758029" duration="2459000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding the links to the navigation bar">
+      <created>1549971643985</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549971643985</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15807000" />
+    <option name="totallyTimeSpent" value="16616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -290,6 +298,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding the links to the navigation bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the links to the navigation bar" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CF_Veterans/app/config/parameters.yml">
@@ -334,18 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
-          <folding>
-            <element signature="e#816#836#0#HTML" expanded="true" />
-            <element signature="e#1136#1156#0#HTML" expanded="true" />
-            <element signature="e#1382#1402#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -355,8 +355,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="63" selection-start-line="4" selection-start-column="65" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="840">
+          <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <element signature="e#816#836#0#HTML" expanded="true" />
+            <element signature="e#1136#1156#0#HTML" expanded="true" />
+            <element signature="e#1382#1402#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
