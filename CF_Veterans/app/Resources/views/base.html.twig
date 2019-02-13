@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>{% block title %}CF_Veterans{% endblock %}</title>
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
@@ -37,25 +38,25 @@
         <div class="menu">
             <ul class="nav flex-column bg-dark" id="menu">
                 <li class="nav-item">
-                    <img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo-cfveterans_montserrat">
+                    <img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo_cfveterans_montserrat">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success active" href="{{ path('index') }}">INICIO</a>
+                    <a class="nav-link active" href="{{ path('index') }}">INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="{{ path('stats') }}">ESTADISTICAS</a>
+                    <a class="nav-link" href="{{ path('stats') }}">ESTADISTICAS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="{{ path('roster') }}">PLANTILLA</a>
+                    <a class="nav-link" href="{{ path('roster') }}">PLANTILLA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="{{ path('lineup') }}">CONVOCATORIA</a>
+                    <a class="nav-link " href="{{ path('lineup') }}">CONVOCATORIA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="{{ path('news') }}">CRONICA</a>
+                    <a class="nav-link" href="{{ path('news') }}">CRONICA</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-success" href="{{ path('media') }}">AUDIOVISUAL</a>
+                    <a class="nav-link" href="{{ path('media') }}">AUDIOVISUAL</a>
                 </li>
             </ul>
         </div>
@@ -80,19 +81,13 @@
 
             <!--Grid column-->
             <div class="col-md-6 mb-4 col-sm-6">
-
             </div>
             <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6 mb-4 col-sm-6">
-                <i class="fab fa-facebook" style="font-size:24px ;color:#28a745"></i>
-                <i class="fab fa-twitter" style="font-size:24px ;color: #28a745"></i>
-                <i class="material-icons" style="font-size:24px;color:#28a745">email</i>
+            <div class="col-md-6 mb-4 col-sm-6" style="color: #BAF04F; font-size:24px">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="material-icons">email</i>
             </div>
-            <!--Grid column-->
-
-
         </div>
         <!--Grid row-->
 
@@ -158,6 +153,10 @@
         width: 150px;
         margin-bottom: 2rem;
         margin-top: 1rem;
+    }
+
+    li > a {
+        color: #BAF04F;
     }
 
 

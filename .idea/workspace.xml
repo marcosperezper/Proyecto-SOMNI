@@ -4,7 +4,6 @@
     <list default="true" id="82b6dd1f-67fa-4272-a939-8809165307da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Players.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
-              <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+            <state relative-caret-position="1638">
+              <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -29,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/RouteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="147">
               <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
             </state>
           </provider>
@@ -44,16 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-              <folding>
-                <element signature="e#816#836#0#HTML" expanded="true" />
-                <element signature="e#1136#1156#0#HTML" expanded="true" />
-                <element signature="e#1382#1402#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="-818">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -67,11 +61,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+            <state relative-caret-position="462">
+              <caret line="22" column="76" lean-forward="true" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,8 +90,8 @@
         <option value="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Goles.php" />
         <option value="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Players.php" />
         <option value="$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig" />
+        <option value="$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -138,6 +135,7 @@
       <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/CF_Veterans/vendor/psr/link" />
       <path value="$PROJECT_DIR$/CF_Veterans/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/CF_Veterans/vendor/symfony/polyfill-ctype" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -151,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,11 +215,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MarcosPerezDAW/Parking" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -257,6 +256,7 @@
       <workItem from="1549613807805" duration="1501000" />
       <workItem from="1549871200949" duration="673000" />
       <workItem from="1549875758029" duration="2459000" />
+      <workItem from="1550046063211" duration="3978000" />
     </task>
     <task id="LOCAL-00001" summary="Adding the links to the navigation bar">
       <created>1549971643985</created>
@@ -265,19 +265,28 @@
       <option name="project" value="LOCAL" />
       <updated>1549971643985</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixing the logo">
+      <created>1549972458328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549972458328</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16616000" />
+    <option name="totallyTimeSpent" value="21467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27238807" />
+      <window_info id="DB Browser" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2750533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -288,7 +297,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -301,7 +310,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding the links to the navigation bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the links to the navigation bar" />
+    <MESSAGE value="Fixing the logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing the logo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CF_Veterans/app/config/parameters.yml">
@@ -322,19 +332,19 @@
     <entry file="file://$PROJECT_DIR$/CF_Veterans/prueba.html" />
     <entry file="file://$PROJECT_DIR$/CF_Veterans/prueba.css" />
     <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Goles.php" />
-    <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Players.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Minutes.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Entity/Players.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="78" column="6" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CF_Veterans/src/AppBundle/Controller/RouteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="147">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
@@ -353,21 +363,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="87" column="48" lean-forward="true" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+        <state relative-caret-position="-818">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/roster.html.twig">
+    <entry file="file://$PROJECT_DIR$/CF_Veterans/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        <state relative-caret-position="462">
+          <caret line="22" column="76" lean-forward="true" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
           <folding>
-            <element signature="e#816#836#0#HTML" expanded="true" />
-            <element signature="e#1136#1156#0#HTML" expanded="true" />
-            <element signature="e#1382#1402#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
