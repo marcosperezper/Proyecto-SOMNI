@@ -1,3 +1,67 @@
 {% extends  "base.html.twig" %}
 {% block body %}
+    <form action="" class="search">
+        <a href="javascript" class="icon"></a>
+        <input type="search" name="Search" id="search" placeholder="Search">
+
+        <input id="submit" value="Enviar" type="submit">
+        <label for="submit" class="submit"></label>
+    </form>
+<div class="categoria">
+    <h2>Categoria</h2>
+    <div class="carousel-wrapper">
+        <div class="carousel" data-flickity>
+            <div class="carousel-cell">
+                <img class="img" style="margin: auto"
+                     src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+            </div>
+            <div class="carousel-cell">
+                <img class="img" style="margin: auto"
+                     src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+            </div>
+            <div class="carousel-cell">
+                <img class="img" style="margin: auto"
+                     src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="categoria2">
+    <h2>Categoria</h2>
+    <div class="carousel-wrapper">
+        <div class="carousel" data-flickity>
+            <div class="carousel-cell">
+                <img class="img" style="margin: auto"
+                     src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+            </div>
+            <div class="carousel-cell">
+                <img class="img" style="margin: auto"
+                     src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+            </div>
+            <div class="carousel-cell">
+                <img class="img" style="margin: auto"
+                     src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block css_extra %}
+    #submit{
+    background-color: #BAF04F;
+    margin-top: 40px;
+    }
+    .search{
+    margin-left: 400px;
+    }
+    .categoria{
+    margin-top: 50px;
+    }
+    .categoria2{
+    margin-top: 30px;
+    }
+    .img{
+    width: 300px;
+    heith: 300px;
+    }
 {% endblock %}
