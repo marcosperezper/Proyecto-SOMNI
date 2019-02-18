@@ -3,75 +3,108 @@
     <div class="col-sm-10">
         <div class="jumbotron columna1 col-sm-3">
             <h3 id="textocoche">Plancha</h3>
-            <img height="200px" width="200px" id="coche1" src="images/logo.png">             <p class="lead"><div class="dropdown">
+            <img height="200px" width="200px" id="coche1" src="images/logo.png">
+            <p class="lead">
+            <div class="dropdown">
                 <div class="divspoiler col-sm-3">
-                    <input type="button" class="btn btn-danger" value="Mostrar" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Mostrar'; }" />
-                </div><div><div class="spoiler" style="display: inline-block">
-                        <br><br>
-                        <div id="contenedor">
-                            <div class="span4"><b>60</b><small><i class="fas fa-heart"></i></small></div>
-                                <div id="contenidos">
-                                <div id="principal">
-                                    In our workshop we make major repairs, among our specialties is the plate.
-                                </div>
+                    <input type="button" class="btn btn-danger" id="button1" value="Mostrar"
+                           onclick="showNew('div1','button1');">
+                </div>
+                <div class="spoiler" id="div1" style="display: none">
+                    <br><br>
+                    <div id="contenedor">
+                        <div class="span4"><b>60</b>
+                            <small><i class="fas fa-heart"></i></small>
+                        </div>
+                        <div id="contenidos">
+                            <div id="principal">
+                                In our workshop we make major repairs, among our specialties is the plate.
                             </div>
                         </div>
-                    </div></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="jumbotron columna2 col-sm-3">
             <h3 id="textocoche">Plancha</h3>
-            <img height="200px" width="200px" id="coche1" src="images/logo.png">             <p class="lead"><div class="dropdown">
+            <img height="200px" width="200px" id="coche1" src="images/logo.png">
+            <p class="lead">
+            <div class="dropdown">
                 <div class="divspoiler col-sm-3">
-                    <input type="button" class="btn btn-danger" value="Mostrar" onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Mostrar'; }" />
-                </div><div><div class="spoiler" style="display: inline-block">
+                    <input type="button" id="button2" class="btn btn-danger" value="Mostrar"
+                           onclick="showNew('div2','button2');"></div>
+                <div>
+                    <div id="div2" class="spoiler" style="display: none">
                         <br><br>
                         <div id="contenedor">
                             <div class="tablas" style="text-align: left">
                                 <div class="row-fluid">
-                                    <div class="span4"><b>60</b><small><i class="fas fa-heart"></i></small></div>
+                                    <div class="span4"><b>60</b>
+                                        <small><i class="fas fa-heart"></i></small>
+                                    </div>
                                 </div>
-                            </div><div id="contenidos">
+                            </div>
+                            <div id="contenidos">
                                 <div id="principal">
                                     In our workshop we make major repairs, among our specialties is the plate.
                                 </div>
                             </div>
                         </div>
-                    </div></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="jumbotron columna3 col-sm-3">
             <h3 id="textocoche">Plancha</h3>
-            <img height="200px" width="200px" id="coche1" src="images/logo.png">             <p class="lead"><div class="dropdown">
+            <img height="200px" width="200px" id="coche1" src="images/logo.png">
+            <p class="lead">
+            <div class="dropdown">
                 <div class="divspoiler col-sm-3">
-                    <input type="button" class="btn btn-danger" value="Mostrar" onclick="
-                    if ( this.parentNode.nextSibling.childNodes[0].style.display == 'none'){
-                         this.parentNode.nextSibling.childNodes[0].style.display = 'inline-block';
-                        this.value = 'Mostrar';
-
-                    }
-
-                    else (this.parentNode.nextSibling.childNodes[0].style.display == 'inline-block')
-                    { this.parentNode.nextSibling.childNodes[0].style.display = 'none';
-                    this.value = 'Ocultar'; }" />
-                </div><div><div class="spoiler " style="display: initial">
+                    <input type="button" class="btn btn-danger" value="Mostrar"
+                           id='button3' onclick="showNew('div3','button3');"/>
+                </div>
+                <div>
+                    <div class="spoiler" id="div3" style="display: none">
                         <br><br>
                         <div id="contenedor">
                             <div class="tablas" style="text-align: left">
                                 <div class="row-fluid">
-                                    <div class="span4"><b>60</b><small><i class="fas fa-heart"></i></small></div>
+                                    <div class="span4"><b>60</b>
+                                        <small><i class="fas fa-heart"></i></small>
+                                    </div>
                                 </div>
-                            </div><div id="contenidos">
+                            </div>
+                            <div id="contenidos">
                                 <div id="principal">
                                     In our workshop we make major repairs, among our specialties is the plate.
                                 </div>
                             </div>
                         </div>
-                    </div></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 {% endblock %}
+
+{% block js_extra %}
+
+    function showNew(news, button){
+
+        let newCollapsed = document.getElementById(news);
+        let buttonEdit = document.getElementById(button);
+            if(newCollapsed.style.display == 'none'){
+                newCollapsed.style.display = '';
+                buttonEdit.value= 'Ocultar';
+            }else{
+                newCollapsed.style.display = 'none';
+
+                buttonEdit.value= 'Mostrar' ;
+            }
+    }
+
+{% endblock %}
+
 {% block css_extra %}
     .jumbotron{
     margin-top: 40px;

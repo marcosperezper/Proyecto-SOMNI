@@ -29,7 +29,7 @@
 
     {% block scripts_extra %}
 
-    {% endblock %}
+        {% endblock %}
 
 </head>
 <body>
@@ -102,6 +102,11 @@
 
 </footer>
 <!-- Footer -->
+<script>
+    {% block js_extra %}
+
+    {% endblock %}
+</script>
 
 {% block javascripts %}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -113,6 +118,7 @@
 {% endblock %}
 </body>
 </html>
+
 
 <style>
     .menu {
