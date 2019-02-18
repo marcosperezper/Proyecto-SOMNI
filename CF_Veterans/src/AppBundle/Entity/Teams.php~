@@ -74,38 +74,5 @@ class Teams
     {
         return $this->name;
     }
-
-    /**
-     * Add teamId
-     *
-     * @param \AppBundle\Entity\Stats $teamId
-     *
-     * @return Teams
-     */
-    public function addTeamId(\AppBundle\Entity\Stats $teamId)
-    {
-        $this->team_id[] = $teamId;
-
-        return $this;
-    }
-
-    /**
-     * Remove teamId
-     *
-     * @param \AppBundle\Entity\Stats $teamId
-     */
-    public function removeTeamId(\AppBundle\Entity\Stats $teamId)
-    {
-        $this->team_id->removeElement($teamId);
-    }
-
-    /**
-     * Get teamId
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getTeamId()
-    {
-        return $this->team_id;
-    }
 }
+

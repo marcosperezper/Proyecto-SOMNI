@@ -62,7 +62,7 @@ class Players
 
     /**
      * One player has many stats. This is the inverse side.
-     * @OneToMany(targetEntity="Stats", mappedBy="player")
+     * @OneToMany(targetEntity="Stats", mappedBy="player_id")
      */
     private $stats_id;
 
@@ -198,39 +198,5 @@ class Players
     public function getPosition()
     {
         return $this->position;
-    }
-
-    /**
-     * Add statsId
-     *
-     * @param \AppBundle\Entity\Stats $statsId
-     *
-     * @return Players
-     */
-    public function addStatsId(\AppBundle\Entity\Stats $statsId)
-    {
-        $this->stats_id[] = $statsId;
-
-        return $this;
-    }
-
-    /**
-     * Remove statsId
-     *
-     * @param \AppBundle\Entity\Stats $statsId
-     */
-    public function removeStatsId(\AppBundle\Entity\Stats $statsId)
-    {
-        $this->stats_id->removeElement($statsId);
-    }
-
-    /**
-     * Get statsId
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getStatsId()
-    {
-        return $this->stats_id;
     }
 }
