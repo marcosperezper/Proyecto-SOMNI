@@ -55,4 +55,20 @@ class RouteController extends Controller
     {
         return $this->render('stats.html.twig');
     }
+
+    /**
+     * @Route("/register", name="register")
+     */
+    public function showRegister(Request $request)
+    {
+        return $this->render('register.html.twig');
+    }
+
+    /**
+     * @Route("/login", name="login")
+     */
+    public function showLogin(Request $request)
+    {
+        return $this->render('login.html.twig');
+    }
 }
