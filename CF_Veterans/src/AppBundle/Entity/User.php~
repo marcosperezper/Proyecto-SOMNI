@@ -152,28 +152,5 @@ class User implements UserInterface, \Serializable
             // $this->salt
             ) = unserialize($serialized, ['allowed_classes' => false]);
     }
-
-    /**
-     * Set role
-     *
-     * @param string $role
-     *
-     * @return User
-     */
-    public function setRole($role)
-    {
-        $this->role = $role;
-
-        return $this;
-    }
-
-    /**
-     * Get role
-     *
-     * @return string
-     */
-    public function getRole()
-    {
-        return $this->role;
-    }
 }
+
