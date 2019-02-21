@@ -2,10 +2,12 @@
 
 namespace AppBundle\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use AppBundle\Form\registroType;
+use AppBundle\Entity\User;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class RouteController extends Controller
 {
@@ -58,14 +60,6 @@ class RouteController extends Controller
     }
 
     /**
-     * @Route("/register", name="register")
-     */
-    public function showRegister(Request $request)
-    {
-        return $this->render('register.html.twig');
-    }
-
-    /**
      * @Route("/login", name="login")
      */
     public function showLogin(Request $request)
@@ -74,11 +68,11 @@ class RouteController extends Controller
     }
 
     /**
-     * @Route("/registro", name="registro")
+     * @Route("/register", name="register")
      */
-    public function nuevoAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
+    public function registroAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
-        $usuario=new user();
+        $usuario=new User();
         $form=$this->createForm(registroType::class,$usuario);
         $form->handleRequest($request);
         if($form->isSubmitted() && $form->isValid()){
@@ -91,6 +85,6 @@ class RouteController extends Controller
             return $this->redirectToRoute('index');
 
         }
-        return $this->render('register.html.twig', array("form"=> $form->createView()));
+        return $this->render('register.html.twig', array('form'=> $form->createView()));
     }
 }

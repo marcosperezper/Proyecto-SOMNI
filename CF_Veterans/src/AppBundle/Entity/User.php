@@ -4,6 +4,8 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+
 
 
 /**
@@ -36,6 +38,12 @@ class User implements UserInterface, \Serializable
      * @ORM\Column(name="password", type="string", length=255, nullable=true)
      */
     private $password;
+
+    /**
+     * @Assert\NotBlank
+     * @Assert\Length(max=4096)
+     */
+    private $plainPassword;
 
     /**
      * @var string
@@ -175,5 +183,15 @@ class User implements UserInterface, \Serializable
     public function getRole()
     {
         return $this->role;
+    }
+
+    public function getPlainPassword()
+    {
+        return $this->plainPassword;
+    }
+
+    public function setPlainPassword($password)
+    {
+        $this->plainPassword = $password;
     }
 }
