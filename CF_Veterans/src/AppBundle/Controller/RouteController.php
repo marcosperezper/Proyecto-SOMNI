@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class RouteController extends Controller
 {
@@ -70,5 +71,26 @@ class RouteController extends Controller
     public function showLogin(Request $request)
     {
         return $this->render('login.html.twig');
+    }
+
+    /**
+     * @Route("/registro", name="registro")
+     */
+    public function nuevoAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
+    {
+        $usuario=new user();
+        $form=$this->createForm(registroType::class,$usuario);
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $password = $passwordEncoder->encodePassword($usuario, $usuario->getPlainPassword());
+            $usuario->setPassword($password);
+            $usuario = $form->getData();
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($usuario);
+            $entityManager->flush();
+            return $this->redirectToRoute('index');
+
+        }
+        return $this->render('register.html.twig', array("form"=> $form->createView()));
     }
 }
