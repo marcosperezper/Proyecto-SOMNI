@@ -1,1 +1,24 @@
 {% extends  "base.html.twig" %}
+
+{% block body %}
+    <div style="margin-top: 10em;" class="col-md-6 col-sm-6">
+        <img class="football_field" src="{{ asset('/images/football_field.jpg') }}" alt="Logo_cfveterans_montserrat">
+    </div>
+    <div style="margin-top: 10em; text-align: center;" class="col-md-6 col-sm-6">
+        <h2 class="lineup">Plantilla</h2>
+    </div>
+{% endblock %}
+
+{% block css_extra %}
+
+    .football_field{
+        transform: rotate(90deg);
+        width: 75rem;
+        height: 60rem;
+        position: relative;
+    }
+
+    .lineup{
+        font-size: 5rem;
+    }
+{% endblock %}
