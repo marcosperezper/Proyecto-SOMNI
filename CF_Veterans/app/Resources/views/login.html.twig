@@ -1,1 +1,30 @@
 {% extends  "base.html.twig" %}
+{% block body %}
+    <form action="{{ path('login') }}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="_username" value="{{ last_username }}" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="_password" />
+
+        <button type="submit">login</button>
+    </form>
+{% endblock %}
+{% block css_extra %}
+    #form{
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 50%;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 1.5rem;
+    }
+    #login_login{
+    background-color: #BAF04F;
+    border: none;
+    color: black;
+    }
+    #login_clear{
+    margin-top: -70px;
+    margin-left: 498px;
+    }
+{% endblock %}

@@ -5,9 +5,12 @@ namespace AppBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Form\registroType;
+use AppBundle\Form\loginType;
 use AppBundle\Entity\User;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+
 
 class RouteController extends Controller
 {
@@ -60,14 +63,6 @@ class RouteController extends Controller
     }
 
     /**
-     * @Route("/login", name="login")
-     */
-    public function showLogin(Request $request)
-    {
-        return $this->render('login.html.twig');
-    }
-
-    /**
      * @Route("/register", name="register")
      */
     public function registroAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
@@ -86,5 +81,22 @@ class RouteController extends Controller
 
         }
         return $this->render('register.html.twig', array('form'=> $form->createView()));
+    }
+
+    /**
+     * @Route("/login", name="login")
+     */
+    public function loginAction(AuthenticationUtils $authenticationUtils)
+    {
+        // get the login error if there is one
+        $error = $authenticationUtils->getLastAuthenticationError();
+
+        // last username entered by the user
+        $lastUsername = $authenticationUtils->getLastUsername();
+
+        return $this->render('login.html.twig', [
+            'last_username' => $lastUsername,
+            'error'         => $error,
+        ]);
     }
 }
