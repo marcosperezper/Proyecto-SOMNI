@@ -43,7 +43,7 @@
         <div class="menu">
             <ul class="nav flex-column bg-dark" id="menu">
                 <li class="nav-item">
-                    <img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo_cfveterans_montserrat">
+                  <a id="logo2" href="{{ path('index') }}"><img id="logo" src="{{ asset('/images/logo.png') }}" alt="Logo_cfveterans_montserrat"></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ path('index') }}">INICIO</a>
@@ -163,6 +163,10 @@
         width: 150px;
         margin-bottom: 2rem;
         margin-top: 1rem;
+    }
+
+    #logo2:hover {
+       background: #343A40;
     }
 
     li > a {
