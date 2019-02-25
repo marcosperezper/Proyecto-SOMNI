@@ -1,16 +1,31 @@
 {% extends  "base.html.twig" %}
 {% block body %}
-    <form action="{{ path('login') }}" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="_username" value="{{ last_username }}" />
+    <div class="container">
+        <form id="form" action="{{ path('login') }}" method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="_username" value="{{ last_username }}"/>
+                </div>
+                <div class="col-md-6">
+                    <label style="text-align: center" for="password">Password:</label>
+                    <input type="password" id="password" name="_password"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mx-auto text-center center-block ">
+                    <button class="btn btn-lg btn-primary btn-block text-uppercase" style="width: 87.5%; " id="login"
+                            type="submit">Iniciar Sesión
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="_password" />
 
-        <button type="submit">login</button>
-    </form>
 {% endblock %}
 {% block css_extra %}
+
     #form{
     margin-top: 200px;
     margin-left: 200px;
@@ -18,13 +33,13 @@
     color: white; text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 1.5rem;
     }
-    #login_login{
+    #login{
     background-color: #BAF04F;
     border: none;
     color: black;
+    margin-top:1rem;
+    font-size: 1.2rem;
+    margin-left: 12 rem;
     }
-    #login_clear{
-    margin-top: -70px;
-    margin-left: 498px;
-    }
+
 {% endblock %}
