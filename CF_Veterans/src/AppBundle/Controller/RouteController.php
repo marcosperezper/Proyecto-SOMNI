@@ -54,11 +54,16 @@ class RouteController extends Controller
      */
     public function showStats(Request $request)
     {
-        $statsRepository=$this->getDoctrine()->getRepository(Stats::class);
-        $stats=$statsRepository->findAll();
-        $teamsRepository=$this->getDoctrine()->getRepository(Teams::class);
-        $teams=$teamsRepository->findAll();
-        return $this->render('stats.html.twig',array('stats'=>$stats,'teams'=>$teams));
+        $statsRepository = $this->getDoctrine()->getRepository(Stats::class);
+        $stats = $statsRepository->findAll();
+        $teamsRepository = $this->getDoctrine()->getRepository(Teams::class);
+        $teams = $teamsRepository->findAll();
+        dump($teams);
+        dump($stats);
+        return $this->render('stats.html.twig', array(
+            'stats' => $stats,
+            'teams' => $teams
+        ));
     }
 
     /**
@@ -66,10 +71,10 @@ class RouteController extends Controller
      */
     public function registroAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
-        $usuario=new User();
-        $form=$this->createForm(registroType::class,$usuario);
+        $usuario = new User();
+        $form = $this->createForm(registroType::class, $usuario);
         $form->handleRequest($request);
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
             $password = $passwordEncoder->encodePassword($usuario, $usuario->getPlainPassword());
             $usuario->setPassword($password);
             $usuario = $form->getData();
@@ -79,7 +84,7 @@ class RouteController extends Controller
             return $this->redirectToRoute('index');
 
         }
-        return $this->render('register.html.twig', array('form'=> $form->createView()));
+        return $this->render('register.html.twig', array('form' => $form->createView()));
     }
 
 
@@ -94,7 +99,7 @@ class RouteController extends Controller
         $lastUsername = $authenticationUtils->getLastUsername();
         return $this->render('login.html.twig', [
             'last_username' => $lastUsername,
-            'error'         => $error,
+            'error' => $error,
         ]);
     }
 
@@ -106,6 +111,6 @@ class RouteController extends Controller
         $repository = $this->getDoctrine()->getRepository(Players::class);
 
         $jugadores = $repository->findAll();
-        return $this->render('roster.html.twig', array('players' => $jugadores ));
+        return $this->render('roster.html.twig', array('players' => $jugadores));
     }
 }
