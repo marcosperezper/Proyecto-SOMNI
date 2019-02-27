@@ -12,14 +12,9 @@
                     <th>Tarjetas Amarillas</th>
                     <th>Tarjetas Rojas</th>
                     <th>Asistencias</th>
+                    <th>Equipo rival</th>
                 </tr>
                 {% for stats in stats %}
-                    <td>{% for team in teams %}
-                            {% if stats.team_id==team.id %}
-                                {{ team.name }}
-                            {% endif %}
-                        {% endfor %}
-                    </td>
                     <tr>
                         <td>{{ stats.id }}</td>
                         <td>{{ stats.player }}</td>
@@ -28,6 +23,12 @@
                         <td>{{ stats.yellowCards }}</td>
                         <td>{{ stats.redCards }}</td>
                         <td>{{ stats.assists }}</td>
+                        <td>{% for team in teams %}
+                                {% if stats.team.id == team.id %}
+                                    {{ team.name }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
                     </tr>
                 {% endfor %}
             </table>
