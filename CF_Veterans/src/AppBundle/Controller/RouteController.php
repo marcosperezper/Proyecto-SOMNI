@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Players;
+use AppBundle\Entity\Teams;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Form\registroType;
@@ -55,7 +56,9 @@ class RouteController extends Controller
     {
         $statsRepository=$this->getDoctrine()->getRepository(Stats::class);
         $stats=$statsRepository->findAll();
-        return $this->render('stats.html.twig',array('stats'=>$stats));
+        $teamsRepository=$this->getDoctrine()->getRepository(Teams::class);
+        $teams=$teamsRepository->findAll();
+        return $this->render('stats.html.twig',array('stats'=>$stats,'teams'=>$teams));
     }
 
     /**
