@@ -66,7 +66,8 @@ class Players
      */
     private $stats_id;
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->stats_id = new ArrayCollection();
     }
 
@@ -232,5 +233,10 @@ class Players
     public function getStatsId()
     {
         return $this->stats_id;
+    }
+
+    public function __toString()
+    {
+        return $this->nickname;
     }
 }

@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Form\registroType;
 use AppBundle\Form\loginType;
 use AppBundle\Entity\User;
+use AppBundle\Entity\Stats;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
@@ -59,7 +60,9 @@ class RouteController extends Controller
      */
     public function showStats(Request $request)
     {
-        return $this->render('stats.html.twig');
+        $statsRepository=$this->getDoctrine()->getRepository(Stats::class);
+        $stats=$statsRepository->findAll();
+        return $this->render('stats.html.twig',array('stats'=>$stats));
     }
 
     /**

@@ -4,6 +4,8 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\JoinColumn;
 use Doctrine\ORM\Mapping\ManyToOne;
+use AppBundle\Entity\Players;
+use AppBundle\Entity\Teams;
 
 /**
  * Stats
@@ -235,11 +237,11 @@ class Stats
     /**
      * Set player
      *
-     * @param \AppBundle\Entity\Player $player
+     * @param \AppBundle\Entity\Players $player
      *
      * @return Stats
      */
-    public function setPlayerId(\AppBundle\Entity\Player $player = null)
+    public function setPlayerId(\AppBundle\Entity\Players $player = null)
     {
         $this->player = $player;
 
@@ -249,7 +251,7 @@ class Stats
     /**
      * Get playerId
      *
-     * @return \AppBundle\Entity\Player
+     * @return \AppBundle\Entity\Players
      */
     public function getPlayerId()
     {

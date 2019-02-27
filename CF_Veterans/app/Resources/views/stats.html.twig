@@ -1,3 +1,69 @@
 {% extends  "base.html.twig" %}
 {% block body %}
+    <h1>Estadísticas</h1>
+    <div class="outerBox">
+        <div class="table table-bordered">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Apodo</th>
+                    <th>Minutos Jugados</th>
+                    <th>Goles</th>
+                    <th>Tarjetas Amarillas</th>
+                    <th>Tarjetas Rojas</th>
+                    <th>Asistencias</th>
+                </tr>
+
+                {% for stats in stats %}
+                    <tr>
+                        <td>{{ stats.id }}</td>
+                        <td>{{ stats.player }}</td>
+                        <td>{{ stats.minutesPlayed }}</td>
+                        <td>{{ stats.goals }}</td>
+                        <td>{{ stats.yellowCards }}</td>
+                        <td>{{ stats.redCards }}</td>
+                        <td>{{ stats.assists }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
 {% endblock %}
+{% block css_extra %}
+    <style>
+        tr, th, td {
+            border: 1px solid black;
+        }
+
+        th, table {
+            text-align: center;
+        }
+
+        .table {
+            border: 1px solid black;
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 40px;
+            margin-right: 55px;
+        }
+
+
+        .outerBox {
+            width: 40%;
+            min-height: 550px;
+            border: 2px solid black;
+            margin: 50px 0 50px 350px;
+            border-radius: 10px 10px 10px 10px;
+            background-color: rgba(231, 220, 220, 0.712);
+        }
+    </style>
+{% endblock %}
+
+
+
+
+

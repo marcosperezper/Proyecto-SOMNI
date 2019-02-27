@@ -108,4 +108,9 @@ class Teams
     {
         return $this->team_id;
     }
+
+    public function __toString()
+    {
+       return $this->name;
+    }
 }
