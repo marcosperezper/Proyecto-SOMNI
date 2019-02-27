@@ -116,4 +116,12 @@ class RouteController extends Controller
         $jugadores = $repository->findAll();
         return $this->render('roster.html.twig', array('players' => $jugadores));
     }
+
+    /**
+     * @Route("/logout", name="logout")
+     */
+    public function logoutAction(Request $request)
+    {
+        // UNREACHABLE CODE
+    }
 }
