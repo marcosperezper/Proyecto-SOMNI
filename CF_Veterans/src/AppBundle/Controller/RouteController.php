@@ -38,7 +38,10 @@ class RouteController extends Controller
      */
     public function showMedia(Request $request)
     {
-        return $this->render('media.html.twig');
+      $repository = $this->getDoctrine()->getRepository(Players::class);
+
+      $jugadores = $repository->findAll();
+      return $this->render('media.html.twig', array('players' => $jugadores));
     }
 
     /**
@@ -106,7 +109,7 @@ class RouteController extends Controller
     /**
      * @Route("/roster", name="roster")
      */
-    public function UsersAction(Request $request)
+    public function showRoster(Request $request)
     {
         $repository = $this->getDoctrine()->getRepository(Players::class);
 
