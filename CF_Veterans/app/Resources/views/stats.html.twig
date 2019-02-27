@@ -2,7 +2,7 @@
 {% block body %}
     <h1>Estadísticas</h1>
     <div class="outerBox">
-        <div class="table table-bordered">
+        <div class="table-responsive table-bordered">
             <table>
                 <tr>
                     <th>ID</th>
@@ -12,8 +12,8 @@
                     <th>Tarjetas Amarillas</th>
                     <th>Tarjetas Rojas</th>
                     <th>Asistencias</th>
+                    <th>Equipo rival</th>
                 </tr>
-
                 {% for stats in stats %}
                     <tr>
                         <td>{{ stats.id }}</td>
@@ -23,6 +23,12 @@
                         <td>{{ stats.yellowCards }}</td>
                         <td>{{ stats.redCards }}</td>
                         <td>{{ stats.assists }}</td>
+                        <td>{% for team in teams %}
+                                {% if stats.team.id == team.id %}
+                                    {{ team.name }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
                     </tr>
                 {% endfor %}
             </table>
@@ -31,6 +37,10 @@
 {% endblock %}
 {% block css_extra %}
     <style>
+        body {
+
+        }
+
         tr, th, td {
             border: 1px solid black;
         }
@@ -39,9 +49,11 @@
             text-align: center;
         }
 
-        .table {
+        .table-responsive {
             border: 1px solid black;
             color: black;
+            font-size: 15px;
+            text-shadow: none;
         }
 
         h1 {
