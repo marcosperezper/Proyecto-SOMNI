@@ -6,29 +6,32 @@
 {% block scripts_extra %}
 {% endblock %}
 
+
+
 {% block body %}
-    <div class="col-md-3 col-sm-3"></div>
-    <div class="col-md-6 col-sm-6">
-        <div class="carousel-wrapper">
-            <div class="carousel" data-flickity>
-                <div class="carousel-cell">
-                    <img class="img_carousel" style="margin: auto"
-                         src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
-                    <button class="btn-primary">Ver estadísticas</button>
+<h1>Usuarios</h1>
+<ul id="players">
+    {% for player in players %}
+    <div class="col-sm-12">
+        <div class="columna1 col-sm-5">
+            <img height="100px" width="100px" id="coche1" src="images/{{player.name}}{{player.lastname}}.png">
+            <p class="lead">
+                <div class="divspoiler col-sm-5">
+                <table>
+                    <tr>
+                        <th>Nombre: </th>
+                        <th><li>{{ player.name }} </li></th>
+                    </tr>
+                    <tr>
+
+                        <td>Posicion: </td>
+                        <td><li>{{ player.position }} </li></td>
+                    </tr>
+                </table>
                 </div>
-                <div class="carousel-cell">
-                    <img class="img_carousel" style="margin: auto"
-                         src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
-                    <button class="btn-primary">Ver estadísticas</button>
-                </div>
-                <div class="carousel-cell">
-                    <img class="img_carousel" style="margin: auto"
-                         src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="/>
-                    <button class="btn-primary">Ver estadísticas</button>
-                </div>
-            </div>
         </div>
     </div>
+    {% endfor %}
 {% endblock %}
 
 {% block css_extra %}

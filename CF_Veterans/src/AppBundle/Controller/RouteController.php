@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Players;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Form\registroType;
@@ -44,14 +45,6 @@ class RouteController extends Controller
     public function showNews(Request $request)
     {
         return $this->render('news.html.twig');
-    }
-
-    /**
-     * @Route("/roster", name="roster")
-     */
-    public function showRoster(Request $request)
-    {
-        return $this->render('roster.html.twig');
     }
 
     /**
@@ -99,4 +92,14 @@ class RouteController extends Controller
         ]);
     }
 
+    /**
+     * @Route("/roster", name="roster")
+     */
+    public function UsersAction(Request $request)
+    {
+        $repository = $this->getDoctrine()->getRepository(Players::class);
+
+        $jugadores = $repository->findAll();
+        return $this->render('roster.html.twig', array('players' => $jugadores ));
+    }
 }
