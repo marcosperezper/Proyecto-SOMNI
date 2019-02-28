@@ -14,7 +14,7 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use AppBundle\Controller\ClearTextController;
-
+use AppBundle\Twig\Extension\FileExtension;
 class RouteController extends Controller
 {
     /**

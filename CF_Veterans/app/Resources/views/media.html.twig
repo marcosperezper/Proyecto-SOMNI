@@ -7,20 +7,22 @@
         <input id="submit" value="Enviar" type="submit">
         <label for="submit" class="submit"></label>
     </form>
-<div class="categoria">
-    <h2>Imagenes de jugadores</h2>
-    <div class="carousel-wrapper">
-        <div class="carousel" data-flickity style="">
-              <div class="carousel-cell" style="">
-                  {% for player in players %}
-                  <img class="img" style="margin: auto; margin-right:auto;"
-                   src="images/media/{{ player.name }}{{ player.lastname }}_media.png"/>
-                  {% endfor %}
-              </div>
+    <div class="categoria">
+        <h2>Imagenes de jugadores</h2>
+        <div class="carousel-wrapper">
+            <div class="carousel" data-flickity style="">
+                {% for player in players %}
+                    <div class="carousel-cell" style="">
 
+                        <img class="img" style="margin: auto; margin-right:auto;"
+                             onerror="this.src='images/missing_image.png'"
+                             src="images/media/{{ player.name }}{{ player.lastname }}_media.png"/>
+                    </div>
+                {% endfor %}
+
+            </div>
         </div>
     </div>
-</div>
 
 {% endblock %}
 {% block css_extra %}
