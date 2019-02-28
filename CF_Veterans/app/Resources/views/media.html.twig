@@ -8,12 +8,11 @@
         <label for="submit" class="submit"></label>
     </form>
     <div class="categoria">
-        <h2>Imagenes de jugadores</h2>
-        <div class="carousel-wrapper">
+        <h2>Cromos de los jugadores</h2>
+        <div class="carousel-wrapper" width="500px" height="500px;">
             <div class="carousel" data-flickity style="">
                 {% for player in players %}
                     <div class="carousel-cell" style="">
-
                         <img class="img" style="margin: auto; margin-right:auto;"
                              onerror="this.src='images/missing_image.png'"
                              src="images/media/{{ player.name }}{{ player.lastname }}_media.png"/>
@@ -21,6 +20,16 @@
                 {% endfor %}
 
             </div>
+        </div>
+    </div>
+
+    <div style="margin-top:8rem;">
+        <h2>Más contenido</h2>
+        <div style="font-size:16px;">
+            Para poder acceder a más contenido tienes a tu disposición el facebook del equipo.
+        </div>
+        <div style="font-size:16px;">
+            <a href="https://www.facebook.com/veterans.montserrat.7">Haz click aquí para ir al facebook</a>
         </div>
     </div>
 
@@ -49,4 +58,16 @@
     .flickity-slider{
     margin-left: -300px;
     }
+
+
+    .carousel-wrapper{
+        text-align: center;
+        margin: 5% 0 0 0;
+        background-color: #FFFFFF;
+        box-shadow: 0px 12px 39px -19px rgba(0, 0, 0, 0.75);
+        overflow: hidden;
+        width:1000px;
+        height:300px;
+    }
+
 {% endblock %}

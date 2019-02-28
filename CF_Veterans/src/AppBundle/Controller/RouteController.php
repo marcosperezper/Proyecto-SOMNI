@@ -15,6 +15,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use AppBundle\Controller\ClearTextController;
 use AppBundle\Twig\Extension\FileExtension;
+use AppBundle\Form\searchType;
+use AppBundle\Form\StatsType;
+use AppBundle\Form\TeamsType;
+use AppBundle\Form\PlayersType;
+
 class RouteController extends Controller
 {
     /**
@@ -38,11 +43,11 @@ class RouteController extends Controller
      */
     public function showMedia(Request $request)
     {
-      $repository = $this->getDoctrine()->getRepository(Players::class);
+        $repository = $this->getDoctrine()->getRepository(Players::class);
 
-      $jugadores = $repository->findAll();
+        $jugadores = $repository->findAll();
 
-        foreach( $jugadores as $jugador){
+        foreach ($jugadores as $jugador) {
             $jugador->setName(ClearTextController::clearText($jugador->getName()));
             $jugador->setLastname(ClearTextController::clearText($jugador->getLastname()));
         }
@@ -67,10 +72,48 @@ class RouteController extends Controller
         $stats = $statsRepository->findAll();
         $teamsRepository = $this->getDoctrine()->getRepository(Teams::class);
         $teams = $teamsRepository->findAll();
+
+        $form = $this->createForm(searchType::class);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $name = $form->getData();
+            return $this->redirectToRoute('stats_player', [
+                'name' => $name['Nombre']
+            ]);
+        }
         return $this->render('stats.html.twig', array(
             'stats' => $stats,
-            'teams' => $teams
+            'teams' => $teams,
+            'form' => $form->createView()
         ));
+    }
+
+    /**
+     * @Route("/stats/{name}", name="stats_player")
+     */
+    public function showStatsPlayer(Request $request, $name)
+    {
+
+        $teamsRepository = $this->getDoctrine()->getRepository(Teams::class);
+        $teams = $teamsRepository->findAll();
+        $playersRepository = $this->getDoctrine()->getRepository(Players::class);
+        $player= $playersRepository->findByName($name);
+        $repository = $this->getDoctrine()->getRepository(Stats::class);
+        $stats = $repository->findByPlayer($player);
+
+        $form = $this->createForm(searchType::class);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $name = $form->getData();
+            return $this->redirectToRoute('stats_player', [
+                'name' => $name['Nombre']
+            ]);
+        }
+        return $this->render('stats_per_player.html.twig', [
+            'stats' => $stats,
+            'teams' => $teams,
+            'form' => $form->createView()
+        ]);
     }
 
     /**
@@ -93,7 +136,43 @@ class RouteController extends Controller
             return $this->redirectToRoute('index');
 
         }
-        return $this->render('register.html.twig', array('form' => $form->createView()));
+
+        $stats = $this->createForm(StatsType::class);
+//        if ($stats>isSubmitted() && $stats->isValid()) {
+//            $insert = $stats->getData();
+//            $entityManager = $this->getDoctrine()->getManager();
+//            $entityManager->persist($insert);
+//            $entityManager->flush();
+//            return $this->redirectToRoute('index');
+//        }
+
+        $team = $this->createForm(TeamsType::class);
+//        if ($team>isSubmitted() && $team->isValid()) {
+//            $insert = $team->getData();
+//            $entityManager = $this->getDoctrine()->getManager();
+//            $entityManager->persist($insert);
+//            $entityManager->flush();
+//            return $this->redirectToRoute('index');
+//
+//        }
+
+
+        $player = $this->createForm(PlayersType::class);
+//        if ($player>isSubmitted() && $player->isValid()) {
+//            $insert = $player->getData();
+//            $entityManager = $this->getDoctrine()->getManager();
+//            $entityManager->persist($insert);
+//            $entityManager->flush();
+//            return $this->redirectToRoute('index');
+//
+//        }
+
+        return $this->render('register.html.twig', array(
+            'form' => $form->createView(),
+            'stats' => $stats->createView(),
+            'teams' => $team->createView(),
+            'player' => $player->createView()
+        ));
     }
 
 
@@ -123,7 +202,7 @@ class RouteController extends Controller
 
         $players = [];
 
-        foreach( $jugadores as $jugador){
+        foreach ($jugadores as $jugador) {
             $jugador->setName(ClearTextController::clearText($jugador->getName()));
             $jugador->setLastname(ClearTextController::clearText($jugador->getLastname()));
         }

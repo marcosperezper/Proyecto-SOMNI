@@ -30,7 +30,7 @@ class registroType extends AbstractType
                     'ROLE_USER' => 'ROLE_USER'
                 ]
             ])
-            ->add('save', SubmitType::class,array('label'=>'Registrate'))
+            ->add('save', SubmitType::class,array('label'=>'Registrar usuario'))
             ->add('clear', ResetType::class,array('label'=>'Limpiar'));
     }
 

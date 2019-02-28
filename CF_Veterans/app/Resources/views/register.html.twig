@@ -1,10 +1,37 @@
 {% extends('base.html.twig') %}
 {% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% form_theme stats 'bootstrap_4_layout.html.twig' %}
+{% form_theme teams 'bootstrap_4_layout.html.twig' %}
+{% form_theme player 'bootstrap_4_layout.html.twig' %}
 {% block body %}
+
+    <h2 style="margin-top: 3rem;">Añadir usuarios</h2>
 
     {{ form_start(form) }}
 
     {{ form_end(form) }}
+     <hr>
+
+    <h2 style="margin-top: 3rem;">Añadir estadísticas</h2>
+    {{ form_start(stats) }}
+
+    {{ form_end(stats) }}
+    <hr>
+
+    <h2 style="margin-top: 3rem;">Añadir equipo rival</h2>
+
+    {{ form_start(teams) }}
+
+    {{ form_end(teams) }}
+    <hr>
+
+    <h2 style="margin-top: 3rem;">Añadir jugador</h2>
+
+    {{ form_start(player) }}
+
+    {{ form_end(player) }}
+
+    <div style="margin-top: 5rem;"></div>
 
 {% endblock %}
 {% block css_extra %}
