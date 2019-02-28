@@ -13,7 +13,7 @@ use AppBundle\Entity\Stats;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
-
+use AppBundle\Controller\ClearTextController;
 
 class RouteController extends Controller
 {
@@ -41,7 +41,13 @@ class RouteController extends Controller
       $repository = $this->getDoctrine()->getRepository(Players::class);
 
       $jugadores = $repository->findAll();
-      return $this->render('media.html.twig', array('players' => $jugadores));
+
+        foreach( $jugadores as $jugador){
+            $jugador->setName(ClearTextController::clearText($jugador->getName()));
+            $jugador->setLastname(ClearTextController::clearText($jugador->getLastname()));
+        }
+
+        return $this->render('media.html.twig', array('players' => $jugadores));
     }
 
     /**
@@ -114,6 +120,14 @@ class RouteController extends Controller
         $repository = $this->getDoctrine()->getRepository(Players::class);
 
         $jugadores = $repository->findAll();
+
+        $players = [];
+
+        foreach( $jugadores as $jugador){
+            $jugador->setName(ClearTextController::clearText($jugador->getName()));
+            $jugador->setLastname(ClearTextController::clearText($jugador->getLastname()));
+        }
+
         return $this->render('roster.html.twig', array('players' => $jugadores));
     }
 

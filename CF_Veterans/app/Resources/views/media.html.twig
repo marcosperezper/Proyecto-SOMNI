@@ -11,12 +11,13 @@
     <h2>Imagenes de jugadores</h2>
     <div class="carousel-wrapper">
         <div class="carousel" data-flickity style="">
-          {% for player in players %}
               <div class="carousel-cell" style="">
+                  {% for player in players %}
                   <img class="img" style="margin: auto; margin-right:auto;"
                    src="images/media/{{ player.name }}{{ player.lastname }}_media.png"/>
+                  {% endfor %}
               </div>
-          {% endfor %}
+
         </div>
     </div>
 </div>
