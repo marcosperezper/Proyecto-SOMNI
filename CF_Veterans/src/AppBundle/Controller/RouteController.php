@@ -58,8 +58,6 @@ class RouteController extends Controller
         $stats = $statsRepository->findAll();
         $teamsRepository = $this->getDoctrine()->getRepository(Teams::class);
         $teams = $teamsRepository->findAll();
-        dump($teams);
-        dump($stats);
         return $this->render('stats.html.twig', array(
             'stats' => $stats,
             'teams' => $teams
