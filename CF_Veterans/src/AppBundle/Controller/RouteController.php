@@ -81,9 +81,10 @@ class RouteController extends Controller
             $password = $passwordEncoder->encodePassword($usuario, $usuario->getPlainPassword());
             $usuario->setPassword($password);
             $usuario = $form->getData();
+            dump($usuario);
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($usuario);
-            $entityManager->flush();
+            //$entityManager->persist($usuario);
+            //$entityManager->flush();
             return $this->redirectToRoute('index');
 
         }
