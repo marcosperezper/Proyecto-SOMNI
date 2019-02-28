@@ -1,37 +1,41 @@
 {% extends  "base.html.twig" %}
 {% block body %}
-    <h1>Estadísticas</h1>
-    <div class="outerBox">
-        <div class="table-responsive table-bordered">
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Apodo</th>
-                    <th>Minutos Jugados</th>
-                    <th>Goles</th>
-                    <th>Tarjetas Amarillas</th>
-                    <th>Tarjetas Rojas</th>
-                    <th>Asistencias</th>
-                    <th>Equipo rival</th>
-                </tr>
-                {% for stats in stats %}
-                    <tr>
-                        <td>{{ stats.id }}</td>
-                        <td>{{ stats.player }}</td>
-                        <td>{{ stats.minutesPlayed }}</td>
-                        <td>{{ stats.goals }}</td>
-                        <td>{{ stats.yellowCards }}</td>
-                        <td>{{ stats.redCards }}</td>
-                        <td>{{ stats.assists }}</td>
-                        <td>{% for team in teams %}
-                                {% if stats.team.id == team.id %}
-                                    {{ team.name }}
-                                {% endif %}
-                            {% endfor %}
-                        </td>
-                    </tr>
-                {% endfor %}
-            </table>
+    <div class="container">
+        <h1>Estadísticas</h1>
+        <div class="row">
+            <div class="outerBox">
+                <div class="table-responsive table-bordered">
+                    <table class="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Apodo</th>
+                            <th>Minutos Jugados</th>
+                            <th>Goles</th>
+                            <th>Tarjetas Amarillas</th>
+                            <th>Tarjetas Rojas</th>
+                            <th>Asistencias</th>
+                            <th>Equipo rival</th>
+                        </tr>
+                        {% for stats in stats %}
+                            <tr>
+                                <td>{{ stats.id }}</td>
+                                <td>{{ stats.player }}</td>
+                                <td>{{ stats.minutesPlayed }}</td>
+                                <td>{{ stats.goals }}</td>
+                                <td>{{ stats.yellowCards }}</td>
+                                <td>{{ stats.redCards }}</td>
+                                <td>{{ stats.assists }}</td>
+                                <td>{% for team in teams %}
+                                        {% if stats.team.id == team.id %}
+                                            {{ team.name }}
+                                        {% endif %}
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
@@ -65,7 +69,7 @@
 
 
         .outerBox {
-            width: 40%;
+            width: 60%;
             min-height: 550px;
             border: 2px solid black;
             margin: 50px 0 50px 350px;
