@@ -61,8 +61,6 @@ class RouteController extends Controller
         $stats = $statsRepository->findAll();
         $teamsRepository = $this->getDoctrine()->getRepository(Teams::class);
         $teams = $teamsRepository->findAll();
-        dump($teams);
-        dump($stats);
         return $this->render('stats.html.twig', array(
             'stats' => $stats,
             'teams' => $teams
@@ -81,10 +79,11 @@ class RouteController extends Controller
             $password = $passwordEncoder->encodePassword($usuario, $usuario->getPlainPassword());
             $usuario->setPassword($password);
             $usuario = $form->getData();
-            dump($usuario);
+            $role = $usuario->getRole();
+            $usuario->setRole($role);
             $entityManager = $this->getDoctrine()->getManager();
-            //$entityManager->persist($usuario);
-            //$entityManager->flush();
+            $entityManager->persist($usuario);
+            $entityManager->flush();
             return $this->redirectToRoute('index');
 
         }
