@@ -1,6 +1,4 @@
 {% extends  "base.html.twig" %}
-
-
 {% block scripts_extra %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -10,45 +8,63 @@
 
 {% block body %}
 
-    <h1 style="text-align:center; padding-top:5%;"> MONTSERRAT CF VETERANS</h1>
 
-    <div class="col-md-12 col-sm-12">
+    <div class="container">
+        <h1> MONTSERRAT CF VETERANS</h1>
         <div class="carousel-wrapper">
-            <div class="carousel" data-flickity>
-                <div class="carousel-cell">
-                    <img class="img_carousel" style="margin: auto"
-                         src="{{ asset('/images/cf_veterans_bench.jpg') }}"/>
-                </div>
-                <div class="carousel-cell">
-                    <img class="img_carousel" style="margin: auto"
-                         src="{{ asset('/images/cf_veterans_gameplay.jpg') }}"/>
-                </div>
-                <div class="carousel-cell">
-                    <img class="img_carousel" style="margin: auto"
-                         src="{{ asset('/images/cf_veterans_team.jpg') }}"/>
+            <div class="row">
+                <div class="col-md-11 col-sm-4 col-xs-3">
+                    <div class="carousel" data-flickity>
+                        <div class="carousel-cell">
+                            <img class="img_carousel" style="margin: auto" alt="roster_in_bench"
+                                 src="{{ asset('/images/cf_veterans_bench.jpg') }}"/>
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="img_carousel" style="margin: auto" alt="team_veterans_playing"
+                                 src="{{ asset('/images/cf_veterans_gameplay.jpg') }}"/>
+                        </div>
+                        <div class="carousel-cell">
+                            <img class="img_carousel" style="margin: auto" alt="full_team_posing_photo"
+                                 src="{{ asset('/images/cf_veterans_team.jpg') }}"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container">
 
-    <p>
-        Club de fútbol de veteranos de Montserrat.
-        El equipo es creado con el objetivo de juntar a los amantes del fútbol de pueblo y pasarlo bien disfrutando del
-        fútbol.
-        Este portal ha sido creado con la intencion de administrar y mejorar el manejo de datos referente al equipo.
+        <div class="row">
+            <div class="col-md-11 col-sm-4 col-xs-3">
+                <p>
+                    Club de fútbol de veteranos de Montserrat.
+                    El equipo es creado con el objetivo de juntar a los amantes del fútbol de pueblo y pasarlo bien
+                    disfrutando
+                    del
+                    fútbol.
+                    Este portal ha sido creado con la intencion de administrar y mejorar el manejo de datos referente al
+                    equipo.
+                </p>
+            </div>
+        </div>
 
-    </p>
+    </div>
 
 {% endblock %}
 
 {% block css_extra %}
     <style>
         .carousel-inner > .item > img {
-            margin: 0 auto;
+            margin: auto;
             max-width: max-content;
         }
-        p{
-            font-size:2rem;
+
+        .carousel-cell {
+            margin: 10px 0 10px 0;
+        }
+
+        p {
+            font-size: 2rem;
             margin-top: 3rem;
         }
     </style>

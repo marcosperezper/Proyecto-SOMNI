@@ -28,4 +28,4 @@ security:
                 path: /logout
                 target: /login
     access_control:
-        - { path: ^/register, roles: ROLE_USER }
+        - { path: ^/register, roles: ROLE_ADMIN }

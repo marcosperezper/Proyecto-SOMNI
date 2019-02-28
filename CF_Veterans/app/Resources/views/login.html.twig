@@ -4,17 +4,17 @@
     <div class="container">
         <form id="form" action="{{ path('login') }}" method="post">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xs-3 col-sm-5 col-md-6">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="_username" value="{{ last_username }}"/>
                 </div>
-                <div class="col-md-6">
+                <div class=" col-xs-3 col-sm-5 col-md-6">
                     <label style="text-align: center" for="password">Password:</label>
                     <input type="password" id="password" name="_password"/>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 mx-auto text-center center-block ">
+                <div class="col-xs-4 col-sm-6 col-md-10 mx-auto text-center center-block ">
                     <button class="btn btn-lg btn-primary btn-block text-uppercase" style="width: 87.5%; " id="login"
                             type="submit">Iniciar Sesión
                     </button>
