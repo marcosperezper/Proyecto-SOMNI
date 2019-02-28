@@ -3,16 +3,14 @@
 {% block scripts_extra %}
 {% endblock %}
 
-
-
 {% block body %}
-    <h1>Usuarios</h1>
+    <h1>Plantilla</h1>
     {% for player in players %}
         <div class="col-sm-12">
             <div class="columna1 col-sm-5">
                 <ul id="players">
-                    <img height="100px" width="100px" id="coche1"
-                         src="images/{{ player.name }}{{ player.lastname }}.png">
+                    <img height="200px" width="100px"
+                         src="images/roster/{{ player.name}}{{player.lastname}}_roster.png">
                     <p class="lead">
                     <div class="divspoiler col-sm-5">
                         <table>
@@ -23,7 +21,6 @@
                                 </th>
                             </tr>
                             <tr>
-
                                 <td>Posicion:</td>
                                 <td>
                                     <li>{{ player.position }}</li>
@@ -38,6 +35,10 @@
 {% endblock %}
 
 {% block css_extra %}
+
+  img {
+    border-radius: 10px;
+  }
 
 
 {% endblock %}

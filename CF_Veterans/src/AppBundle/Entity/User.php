@@ -131,7 +131,7 @@ class User implements UserInterface, \Serializable
 
     public function getRoles()
     {
-        return ['ROLE_USER'];
+        return [$this->role];
     }
 
     public function eraseCredentials()

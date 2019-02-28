@@ -49,27 +49,38 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ path('index') }}">INICIO</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('stats') }}">ESTADISTICAS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('roster') }}">PLANTILLA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="{{ path('lineup') }}">CONVOCATORIA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('news') }}">CRONICA</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('media') }}">AUDIOVISUAL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ path('register') }}">REGISTRARSE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ ('login') }}">INICIAR SESION</a>
-                </li>
+                {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('stats') }}">ESTADISTICAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('roster') }}">PLANTILLA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="{{ path('lineup') }}">CONVOCATORIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('news') }}">CRONICA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('media') }}">AUDIOVISUAL</a>
+                    </li>
+                {% endif %}
+                {% if is_granted('ROLE_USER') %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('register') }}">PANEL DE ADMINISTRADOR</a>
+                    </li>
+                {% endif %}
+
+                {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                    <li>
+                        <a href="{{ path('logout') }}">CERRAR SESIÓN</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ ('login') }}">INICIAR SESION</a>
+                    </li>
+                {% endif %}
             </ul>
         </div>
     </div>
